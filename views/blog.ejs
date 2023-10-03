@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/public/styles.css">
     <title>My Blog</title>
 </head>
 <body>
@@ -11,8 +12,9 @@
     <ul>
         <% blogPost.forEach(function(post) { %>
             <li>
+                
                 <h2><%= post.title %></h2>
-                <img src="<%= post.picture %>" alt="<%= post.title %>">
+                <img src="/public/<%= post.img %>" alt="<%= post.title %>">
                 <p><%= post.text %></p>
             </li>
         <% }); %>
